@@ -14,7 +14,7 @@ interface ChatProps {
   username: string;
 }
 
-const socket: Socket = io('http://localhost:3001'); // Backend Socket.IO server URL
+const socket: Socket = io('https://clickmate-backend.onrender.com'); // Backend Socket.IO server URL
 
 const Chat: React.FC<ChatProps> = ({ username }) => {
   const [messages, setMessages] = useState<Message[]>([]);
